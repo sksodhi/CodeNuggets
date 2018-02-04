@@ -19,7 +19,6 @@ displayCfg(const Json::Value &cfg_root);
 int
 main()
 {
-    Json::Reader reader;
     Json::Value cfg_root;
     std::ifstream cfgfile("cfg.json");
     cfgfile >> cfg_root;
