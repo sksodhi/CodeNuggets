@@ -1,5 +1,5 @@
 //
-// Makefile
+// ReadJsonCfg.cpp
 //
 // Created by Sandesh Kumar Sodhi, January 2018
 // Copyright (c) 2018 Sandesh Kumar Sodhi
