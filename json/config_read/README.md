@@ -11,14 +11,22 @@ Ubuntu 16.04:
 Example run
 ==============
 ```
-~/CodeNuggets/json# make
+ > pwd
+/root/CodeNuggets/json/config_read
+ > ls -l
+total 16
+-rw-r--r-- 1 root root  689 Feb  4 02:30 Makefile
+-rw-r--r-- 1 root root  911 Feb  4 02:38 README.md
+-rw-r--r-- 1 root root 1207 Feb  4 02:29 ReadJsonCfg.cpp
+-rw-r--r-- 1 root root  175 Feb  4 02:15 cfg.json
+ > make
 Makefile:43: .depend: No such file or directory
 rm -f ./.depend
 g++ -g -O0 -std=c++11 -I. -I/usr/include/jsoncpp -MM ReadJsonCfg.cpp >  ./.depend;
 g++ -g -O0 -std=c++11 -I. -I/usr/include/jsoncpp  -c -o ReadJsonCfg.o ReadJsonCfg.cpp
 g++ ReadJsonCfg.o -L/usr/local/lib -ljsoncpp -o readjsoncfg
 readjsoncfg compilation success!
-:~/CodeNuggets/json# ./readjsoncfg 
+ > ./readjsoncfg 
 ______ cfg_root : start ______
 {
         "Config" : 
